@@ -1,0 +1,13 @@
+#tooltip {
+    padding: 3px;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    text-align: center;
+    font-size: smaller;
+}
+
+span.tip {
+	cursor:pointer;
+}
+/* CSS Document */
+

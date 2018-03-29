@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>vg_myfolio</name>
+	<version>1.0.4</version>
+	<creationDate>Jun 2013</creationDate>
+	<author>Valentín García</author>
+	<authorEmail>htmgarcia@gmail.com</authorEmail>
+	<authorUrl>http://www.valentingarcia.com.mx</authorUrl>
+    <copyright>Copyright (C) Valentín García 2012</copyright>
+    <license>http://www.gnu.org/licenses/gpl.html GNU/GPL</license>
+	<description>
+		<![CDATA[
+		My Folio. Info and Support: <a href="mailto:htmgarcia@gmail.com">htmgarcia@gmail.com</a><br/><a href="index.php?option=com_templates">Go to Template Manager</a> 
+		<style>
+		#jform_params_spacer1-lbl, #jform_params_spacer2-lbl, #jform_params_spacer3-lbl, #jform_params_spacer4-lbl, #jform_params_spacer5-lbl
+			{font-weight:bold;text-align:left !important;color:#fff;background:#333;border-radius:4px;padding:5px 15px;width:100% !important;}
+		.panel{ font-family:Calibri;}
+		.panel label{ font-weight:bold; text-align:right; }
+		.panel input, .panel textarea{ color:#333; background:rgba(0,0,0,0.02); }
+		#jform_params_vg_fontlink, #jform_params_vg_fontfamily{ width:264px; }
+		</style>
+		]]>
+	</description>
+	<files>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>includes</folder>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>error.php</filename>
+		<filename>component.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>LICENSE.txt</filename>
+	</files>
+	<positions>
+		<position>component-top-a</position>
+		<position>component-top-b</position>
+		<position>component-top-c</position>
+		<position>component-bottom-a</position>
+		<position>component-bottom-b</position>
+		<position>component-bottom-c</position>
+		<position>footer-a</position>
+		<position>footer-b</position>
+		<position>footer-c</position>
+		<position>footer-d</position>
+	</positions>
+	<languages>
+		<language tag="en-GB">en-GB.tpl_vg_myfolio.ini</language>
+	</languages>
+	<config>
+		<fields name="params">	
+			<fieldset name="basic">		
+		    	<field name="vg_logo" type="media" label="Logo image" description="Choose a PNG image" />
+				<field name="vg_logo_2x" type="media" label="Logo image (HD)" description="Choose a PNG image" />
+				<field name="vg_analytics" type="text" label="Google analytics code" description="Add your Google analytics here. EXAMPLE: UA-11831410-01" default="" />
+				<field name="vg_css" type="textarea" label="Custom CSS" description="Set/Change your custom CSS class" default="" cols="35" rows="5" />
+				<field name="vg_copy" type="textarea" default="" filter="raw" label="Footer content (HTML)" description="Copyright Info" cols="35" rows="5" />
+				<field name="vg_toplink" type="radio" class="btn-group" default="1" label="Top link" description="Enable or disable the Top link in Menu">
+					<option value="1">Display</option>
+					<option value="0">Hide</option>
+				</field>
+				<field name="vg_preload" type="radio" class="btn-group" default="1" label="Preloader" description="Enable or disable the Preloading mask">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+			</fieldset>
+			<fieldset name="COLORS">
+				<field name="vg_bgcontentimage" type="media" label="Background Image" description="Choose a big image" />
+				<field name="vg_bgcontent" type="color" default="#000" label="Background :: Body" description="Set Background Color for Body" />
+				<field name="vg_bgheader" type="color" default="#0B0B0B" label="Background :: Header" description="Set Background Color for Header" />
+				<field name="vg_bgfooter" type="color" default="#0B0B0B" label="Background :: Footer" description="Set Background Color for Footer" />
+			</fieldset>
+			<fieldset name="FONTS">
+				<field name="spacer1" type="spacer" label="Google Font 1" />
+				<field name="vg_fontlink_1" type="text" label="Google font link" description="Add your Google font link here. EXAMPLE: http://fonts.googleapis.com/css?family=Open+Sans:400,600" default="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,600,800" />
+				<field name="vg_fontfamily_1" type="text" label="Google font family" description="Add your Google font family here. EXAMPLE: 'Open Sans',Arial,sans-serif" default="'Open Sans'" />				
+				<!--field name="vg_fontlink_2" type="text" label="Google font link" description="Add your Google font link here. EXAMPLE: http://fonts.googleapis.com/css?family=Open+Sans:400,600" default="http://fonts.googleapis.com/css?family=Vollkorn:400,400italic" />
+				<field name="vg_fontfamily_2" type="text" label="Google font family" description="Add your Google font family here. EXAMPLE: 'Open Sans',Arial,sans-serif" default="'PT Sans'" />				
+				<field name="spacer3" type="spacer" label="Google Font 2" />
+				<field name="vg_fontlink_3" type="text" label="Google font link" description="Add your Google font link here. EXAMPLE: http://fonts.googleapis.com/css?family=Open+Sans:400,600" default="http://fonts.googleapis.com/css?family=Lato:400,700,900,300" />
+				<field name="vg_fontfamily_3" type="text" label="Google font family" description="Add your Google font family here. EXAMPLE: 'Open Sans',Arial,sans-serif" default="'Lato', sans-serif" /-->				
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="vg_menu_one_page" type="text" default="mainmenu" label="Menu type (to create One Page modules)" description="By default: mainmenu" />
+				<field name="vg_alert_one_page" type="radio" class="btn-group" default="1" label="Display Alerts (for One Page empty modules)" description="Enable or disable the Alerts when a Module is not enabled in a Published Custom Module Position. Recomended for One Page behavior.">
+					<option value="1">Display</option>
+					<option value="0">Hide</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

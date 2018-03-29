@@ -1,0 +1,84 @@
+/*general*/
+h1{ text-transform:uppercase; }
+
+/*modules*/
+.white-bottom-none:before{ border-width:0; }
+
+/*twitter*/
+.jta-tweet-list, #twitter_update_list{ position:relative; display:block; }
+	.jta-tweet-list li{ position:relative; display:block; }
+
+/*isotope*/
+.isotope-hidden.isotope-item{  }
+
+/*contact*/
+.vg-contact-module, .vg-twitter-module{ height:401px; }
+
+/*alerts*/
+.vg-alert{ color:#ff0000; }
+.vg-alert-onepage{ color:#fff; background:#ff0000; padding:8px 15px; }
+	.vg-alert-onepage strong{ font-style:italic; }
+
+/*component*/
+.hide-component #vg-mainbody{ display:none !important; }
+
+/*articles*/
+.item-image, .item-image img{ width:100%; height:auto; }
+.white-bottom-component h1{ font-size:50px; }
+.white-bottom-component h1, .white-bottom-component h2, .white-bottom-component h3, .white-bottom-component h4, .white-bottom-module h1, .white-bottom-module h2, .white-bottom-module h3, .white-bottom-module h4{ margin-left:0; padding-top:5px; padding-bottom:15px; margin-right:0; line-height:1; }
+.white-bottom-component, .white-bottom-module{ background:#fff; padding:40px; }
+	.white-bottom-component p, .white-bottom-module p{ padding:14px 0px 0; }
+.vg-article-title, .vg-article-title a, .blog h2, .blog h2 a, .blog h3{ padding-top: 5px; font-weight: 900; color:auto; text-transform: uppercase; text-align:left; }
+	.vg-article-title a:hover, .blog h2 a:hover, ul li a, ol li a, .readmore a{ color:auto; }
+ul li a:hover, ol li a:hover, .readmore a:hover{ color:auto; }
+.readmore{ margin-top:0px; }
+	.readmore a{ font-weight:700; text-transform:uppercase; font-size:12px; }
+.vg-article-heading{ margin-bottom:50px; }
+.item-page h1, .blog h1{  }
+.item-page h2, .blog h2{  }
+.item-page a, .blog a{ text-decoration:none; color:#333; }
+.pagination{ margin-top:40px; }
+.pagination ul{ margin-left:0px; }
+.pagination ul li{ color:#fff; list-style:none; float:left; width:50px; }
+.pagination ul .pagination-start, .pagination ul .pagination-end{ width:50px; }
+.pagination ul li span, .pagination ul li a{ display:inline-block; margin-right:10px; width:auto; }
+.pagenav{ margin-left:0px; margin-top:60px; }
+.pagenav li{ list-style:none; display:inline; }
+.pagenav li.prev{ float:left; }
+.pagenav li.next{ float:right; }
+.actions{}
+.actions li{ list-style:none; float:right; display:inline; margin-left:10px; }
+.article-info{ margin-left:-4px; color:#999; margin-bottom:10px; }
+.article-info dt, .article-info dd{ list-style:none; display:inline; margin-left:7px; text-transform: uppercase; font-size:12px;  }
+	.article-info a{ font-weight:700; }
+		.article-info a:hover{  }
+.img-intro-left img, .img-intro-right img, .img-intro-center img{ margin:20px 0; }
+/*article - icons*/
+.dropdown-menu{ float:right; }
+	.dropdown-menu li{ display:inline-block; margin-left:5px; }
+.actions .print-icon a{ background:url(../images/print.png) no-repeat; }
+.actions .print-icon a img{ opacity:0; filter: alpha(opacity = 0); }
+.actions .email-icon a{ background:url(../images/email.png) no-repeat; }
+.actions .email-icon a img{ opacity:0; filter: alpha(opacity = 0); }
+.leading-0, .leading-1, .leading-2, .leading-3, .leading-4, .leading-5, .leading-6, .leading-7, .leading-8, .leading-8, .leading-9, .leading-10, .leading-11, .leading-12, .leading-13, .leading-14, .leading-15, .items-row, .items-more{ margin-bottom:20px;  }
+/*article - columns and rows*/
+	/*1 column*/
+	.items-leading{}
+	.items-leading .img-intro-left img{ max-width:100%; }
+	/*2 columns*/
+	.cols-2{}
+	.cols-2 .column-1, .cols-2 .column-2{ width:50%; float:left; }
+	.cols-2 .img-intro-left{ }
+	.cols-2 .img-intro-left img{ max-width:50%; }
+	/*3 columns*/
+	.cols-3{}
+	.cols-3 .column-1, .cols-3 .column-2, .cols-3 .column-3{ width:50%; float:left; }
+	.cols-3 .img-intro-left{ }
+	.cols-3 .img-intro-left img{ max-width:33.3%; }
+.items-row .item, .items-leading > div{ margin-bottom:40px; }
+.vg-slider-in-article{ margin-bottom:40px; }
+.img-fulltext-left img, .img-fulltext-right img, .img-fulltext-none img, .img-intro-left img, .img-intro-right img, .img-intro-none img{ width:100%; margin-bottom:20px; }
+.VimeoPlayer, .MapPlayer{ margin-bottom:20px; }
+h2 a.vg-color{ font-size:40px; }
+.items-more ol{ margin-left:0px; }
+	.items-more ol li{}

@@ -1,0 +1,43 @@
+Options +FollowSymLinks
+ 
+RewriteEngine On
+
+ErrorDocument 404 http://www.nationalfleetservices.net/notfound.php
+
+Redirect 301 /special-offers.php http://www.nationalfleetservices.net/
+
+RewriteRule ^connect/enquiry-([0-9]+)$ connect/enqedit.php?enqno=$1
+
+RewriteRule ^connect/archived$ connect/enqlist.php?status=a
+
+RewriteRule ^connect/live$ connect/enqlist.php
+
+RewriteRule ^connect/add$ connect/enqedit.php
+
+RewriteRule ^connect/logout$ /logout.php
+
+RewriteRule ^connect/admin/dash$ connect/admin/dash.php
+
+RewriteRule ^connect/admin/enquiry-([0-9]+)$ connect/admin/enqedit.php?enqno=$1
+
+RewriteRule ^connect/admin/archived$ connect/admin/enqlist.php?status=a
+
+RewriteRule ^connect/admin/live$ connect/admin/enqlist.php
+
+RewriteRule ^connect/admin/add$ connect/admin/enqedit.php
+
+RewriteRule ^connect/admin/logout$ connect/logout.php
+
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType images/jpg "access plus 1 month"
+ExpiresByType images/jpeg "access plus 1 month"
+ExpiresByType images/gif "access plus 1 month"
+ExpiresByType images/png "access plus 1 month"
+ExpiresByType js/x-javascript "access plus 1 month"
+ExpiresByType images/x-icon "access plus 1 month"
+ExpiresDefault "access plus 2 days"
+</IfModule>
+## EXPIRES CACHING ##

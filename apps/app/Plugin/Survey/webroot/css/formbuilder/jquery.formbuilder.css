@@ -1,0 +1,256 @@
+/* jquery.formbuilder css */
+div#my-form-builder input.textbox, div#my-form-builder textarea.textarea, div#my-form-builder .select{
+    width: auto;
+}
+
+.btn-toolbar { margin:10px};
+
+.subnav {
+/*
+     background-color: #EEEEEE;
+    background-image: -moz-linear-gradient(center top , #F5F5F5 0%, #EEEEEE 100%);
+    background-repeat: repeat-x;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px 4px 4px 4px;
+    height: 36px;*/
+    margin-bottom: 20px;
+/*    width: 100%;*/
+}
+
+.subnav div.container{
+    width: 910px;
+}
+
+.subnav-fixed {
+    background-color: #666666;
+    border-color: #D5D5D5;
+    /*border-radius: 0 0 0 0;*/
+    border-width: 0 0 1px;
+    /*box-shadow: 0 1px 0 #FFFFFF inset, 0 1px 5px rgba(0, 0, 0, 0.1);*/
+    left: 0;
+    position: fixed;
+    right: 0px;
+    top: 40px;
+    z-index: 1020;
+}
+
+.subnav a{
+    font-size : 12px;
+}
+.subnav .formbuilder{
+background-repeat: no-repeat;
+display: inline-block;
+height: 15px;
+line-height: 14px;
+vertical-align: text-top;
+width: 15px;
+}
+
+.fb-textfield{
+    background-image: url('../../img/survey/textfield.png');
+}
+.fb-multitext{
+    background-image: url('../../img/survey/multitext.png');
+}
+.fb-radiobutton{
+    background-image: url('../../img/survey/radiobutton.png');
+}
+.fb-checkbox{
+    background-image: url('../../img/survey/tick.png');
+}
+.fb-dropdownlist{
+    background-image: url('../../img/survey/picklist.png');
+}
+.fb-sectionbreak{
+    background-image: url('../../img/survey/section_break.png');
+}
+.fb-datepicker{
+    background-image: url('../../img/survey/date.png');
+}
+.fb-tabbable{
+    background-image: url('../../img/survey/tab_new.png');
+}
+
+.frmb-control { }
+
+.frmb-submit { }
+
+/**
+ * Make Form Like Edit in Place
+ */
+
+input.example-field,
+input.edit-in-place {
+    width: 890px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: none;
+    border: 1px solid transparent !important;
+}
+
+input.edit-in-place[name="help"]{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+div.fields input.edit-in-place{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#surveyForm.edit-in-place:hover
+#surveyForm.edit-in-place:hover,
+#surveyForm.edit-in-place:focus,
+input.edit-in-place:focus,
+input.example-field:hover,
+input.edit-in-place:hover {
+    border: 1px solid #CCC !important;
+}
+
+
+ul.frmb {
+    padding-left: 0px;
+    list-style-type: none;
+    margin-left: 0px;
+    overflow: hidden;
+}
+
+ul.frmb .radio input[type="radio"],
+ul.frmb .checkbox input[type="checkbox"] {
+    margin-left: 0px;
+}
+
+.frmb li {
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #EEE;
+    background: #f0f0f0;
+}
+
+.frmb li:hover {
+    border: 1px solid #333;
+}
+
+.frmb li.select{
+    width: auto;
+}
+
+.frmb .legend {
+    cursor: move;
+    margin-bottom: 10px;
+}
+
+.frm-holder{
+    margin-bottom: 0px;
+}
+
+.frmb .legend .toggle-form {
+    float: right;
+}
+
+.frm-elements {
+    padding: 3px 0;
+}
+
+.frm-elements table{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.frm-elements label {
+    width: 110px;
+    float: left;
+    margin-left: 5px;
+    line-height: 24px;
+}
+
+.frm-elements .false-label {
+    width: 20%;
+    float: left;
+    margin-left: 5px;
+    line-height: 24px;
+}
+
+.frm-elements input[type=text] {
+    float: left;
+    width: 99%;
+}
+
+.frm-elements .fields {
+    width: 75%;
+    float: left;
+}
+
+.frm-elements .fields input[type=checkbox],
+.frm-elements .fields input[type=radio] {
+    float: left;
+    margin-right: 10px;
+}
+
+.frm-elements .false-label{ margin-top: 16px; }
+.frm-elements .fields { margin-top: 10px }
+
+.frm-elements .fields div{ margin-top: 10px }
+
+.frm-elements .fields div {
+    clear: both;
+    float: left;
+    width: 99%;
+}
+
+.frm-elements .fields input[type=text] {
+    width: 75%;
+}
+
+.frm-elements .fields label.auto {
+    width: auto;
+    margin: 0 0 5px 0;
+}
+
+.frm-elements .fields .remove {
+    margin-left: 10px;
+    line-height: 24px;
+}
+
+.frm-elements .fields .add-area {
+    margin: 10px 25px 0;
+}
+
+.frm-elements .fields .add-area .add {
+    clear: both;
+}
+
+.frm-elements:after,
+.frm-fld:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.frm-elements,
+.frm-fld { display: inline-block }
+
+.frm-elements,
+.frm-fld { display: block }
+
+div.frm-elements label,
+div.frm-fld label {
+    width: 110px;
+}
+
+div.frm-fld label[class="checkbox"] {
+    padding-left: 0px;
+}
+
+.del-button {
+    float: right;
+    margin-right: 10px;
+}
+
+/* html display helpers */
+textarea, .multi-row span { display: block; }
+
